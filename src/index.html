@@ -1,14 +1,40 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
-  </head>
-  <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page title</title>
+  <link rel="stylesheet" href="./sass/index.scss" />
+  <script type="module" src="./index.js"></script>
+</head>
+
+<body>
+  <!-- ❗️❗️❗️ Add partials like so for every page -->
+  <!-- <include src="./partials/example.html"></include> -->
+  <include src="./partials/main.html"></include>
+</body>
+
 </html>
+
+<!-- <a class="gallery_link" href="${largeImageURL}">
+  <div class="photo-card">
+    <div class="photo-card_wrapper">
+      <img src="${webformatURL}" alt="${tags}" loading="lazy" width=320px heith=240px />
+    </div>
+    <div class="info">
+      <p class="info-item">
+        <b>Likes </b>${likes}
+      </p>
+      <p class="info-item">
+        <b>Views </b>${views}
+      </p>
+      <p class="info-item">
+        <b>Comments </b>${comments}
+      </p>
+      <p class="info-item">
+        <b>Downloads </b>${downloads}
+      </p>
+    </div>
+  </div>
+</a> -->
