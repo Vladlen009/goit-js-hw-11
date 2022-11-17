@@ -9,12 +9,6 @@ async function fetchData(value, page = 1) {
     const responce = await axios.get(URL);
     return responce.data;
 
-    // return fetch(URL).then(responce => {
-    //   if (!responce.ok) {
-    //     throw new Error('error');
-    //   }
-    //   return responce.json();
-    // });
   } catch (error) {
     console.log(error);
   }
